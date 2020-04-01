@@ -1,13 +1,117 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* , *::before , *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Cantarell','sans-serif';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.App {
+ width: 40%;
+ margin: 5% auto ;
+ text-align: center;
+}
+.Books-List{
+  width: 90%;
+  border: 4px solid rgba(83, 83, 179, 0.438);
+  border-radius: 6px;
+}
+.Header {
+  width: 100%;
+  background-color: rgba(118, 34, 197, 0.692);
+  padding: 5%;
+  color: aliceblue;
+}
+.Header h1 {
+  padding: 0;
+  margin:0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.Header p {
+  padding: 0;
+  margin:0;
+  font-weight: bold;
+}
+.Header span {
+  padding: 0;
+  margin:0;
+  color: rgb(95, 209, 95);
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+span:hover {
+  color: #999;
+}
+
+.No-item{
+  color:  rgba(118, 34, 197, 0.692);
+  text-transform: uppercase;
+  font-size:2rem;
+}
+.List {
+  list-style: none;
+ padding: 0;
+}
+
+.Book{
+
+  border: 3px double rgba(138, 67, 204, 0.692);
+  border-radius: 3px;
+  padding:8px;
+  margin: 14px 20px;
+  cursor: pointer;
+  
+ transition: all .6s ease-in-out;
+}
+
+.Book h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.Book p{
+  margin: 0;
+}
+
+.Book:hover{
+  text-decoration: line-through;
+  font-size: 2rem;
+  background-color: seagreen;
+  color: aliceblue;
+}
+.Forms{
+  width: 90%;
+  margin:auto;
+  margin-top: 5px;
+  padding: 0;
+}
+
+input[type="text"]{
+outline: none;
+width: 100%;
+padding: 9px;
+margin-bottom: 3%;
+border: 2px solid #999;
+border-radius: 3px;
+ 
+}
+
+input[type="submit"]{
+list-style: none;
+width: 100%;
+padding: 9px;
+margin-bottom: 3%;
+background-color:  seagreen;
+cursor: pointer;
+color: beige;
+font-size: 1.4rem;
+font-weight: bold;
 }
